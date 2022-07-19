@@ -1,0 +1,8 @@
+@use "variables";
+
+@mixin opacite($valeur-opa, $color, $trans) {
+  opacity: $valeur-opa;
+  color: $color;
+  transition: $trans;
+  
+}

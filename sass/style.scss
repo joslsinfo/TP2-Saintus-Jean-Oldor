@@ -1,0 +1,156 @@
+
+
+@use "variables";
+@use "mixins";
+// @use "navigation";
+
+
+@import "../bootstrap-5.2.0/scss/bootstrap.scss";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.8;
+  
+}
+
+body{
+  background-color:variables.$txt-color4;
+}
+
+
+.nav__elems{
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  @extend .bg-primary;
+
+}
+.nav__navbar-brand{
+  @extend .navbar-brand;
+}
+
+.nav__logo {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav__navbar-nav{
+  @extend .navbar-nav;
+}
+
+.nav__nav-item{
+  @extend .nav-item;
+}
+
+
+.nav__nav-link{
+  @extend .nav-link;
+  
+}
+.nav__nav-link--active{
+  @extend .active;
+}
+
+
+.label {
+  display: none;
+}
+
+
+
+.form-input {
+  margin-right: 2rem;
+}
+
+.form__label{
+  display: none;
+}
+
+.btn-style {
+  border-radius: 20px;
+}
+
+.images {
+  width: 50%;
+}
+.video {
+  width: 100%;
+}
+
+#sec3 {
+  margin: 1rem;
+}
+
+.titre_tournage {
+  display: none;
+}
+
+.faitsdivers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col__btn-social {
+  @include mixins.opacite(1, variables.$txt-color2, 2s ease);
+  padding: 0.3em;
+
+  &:hover {
+    @include mixins.opacite(0.8, variables.$txt-color1, 2s ease);
+  
+
+  }
+}
+
+.card__socialmedia {
+  @extend .col__btn-social;
+  padding: 1em;
+}
+
+.row__img {
+  @extend .col__btn-social;
+}
+
+.card__img {
+  @extend .col__btn-social;
+}
+
+
+
+.row__para{
+margin-left: 0.5rem;
+}
+
+.section2, .section4{
+  display:none;
+}
+
+hr{
+  color: variables.$txt-color3;
+  border: 1px solid;
+}
+.row__trait{
+  color:variables.$txt-color4;
+  
+}
+
+.row__hr{
+  width: 300px;
+  border: 3px solid variables.$txt-color3;
+  margin: auto;
+  position: absolute;
+ 
+ 
+}
+
+
+
+
+
+
+
