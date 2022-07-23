@@ -95,7 +95,7 @@
 
                                 <input type="number" class="form-control btn-style" placeholder="Selectionner la quantité"
                                     aria-label="Selectionner la quantité avec deux boutons addons">
-                                <button class="btn btn-outline-secondary" type="button">+</button>
+                                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
                                 <button class="btn btn-outline-secondary" type="button">Acheter maintenant</button>
     
                             </div>
@@ -183,14 +183,15 @@
                         <p>Voici quelques acteurs qui ont joué dans le film "The Karate KID 2010"</p>
 
 
-                        <form class="navbar-form navbar mb-3">
-                            <div class="form-group">
+                        <form class="navbar-form navbar mb-3" id="form" action="#" onsubmit="return validateForm()">
+                            <div class="form-group input-control">
                                 <label class="form__label" for="exampleInputEmail1"
                                     aria-labelledby="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    placeholder="Enter your email" aria-describedby="exampleInputEmail1" required>
+                                <input type="email" id="exampleInputEmail1" class="bg-primary text-white"
+                                    placeholder="Enter your email" aria-describedby="exampleInputEmail1">
+                                <div class="errorMessage"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Sign up</button>
+                            <button type="submit" class="btn btn-primary btn-md pl-2"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</button>
                         </form>
 
 
@@ -534,6 +535,7 @@
     </footer>
 
 
+    <script src="scripts/validation.js"></script>
 
     <script src="bootstrap-5.2.0/dist/js/bootstrap.bundle.js"></script>
 

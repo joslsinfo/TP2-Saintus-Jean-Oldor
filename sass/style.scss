@@ -4,9 +4,7 @@
 @use "mixins";
 
 
-
 @import "../bootstrap-5.2.0/scss/bootstrap.scss";
-
 
 
 * {
@@ -57,10 +55,11 @@ body{
 }
 
 
+
+
 .label {
   display: none;
 }
-
 
 
 .form-input {
@@ -70,6 +69,73 @@ body{
 .form__label{
   display: none;
 }
+
+
+
+input::placeholder{
+  color: variables.$txt-color4;
+  opacity:1;
+}
+
+
+
+.input-control input {
+  border: 2px solid variables.$txt-color4;
+  border-radius: 0 25px 25px 0;
+  // display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+
+ &:focus{
+  outline: 0;
+ }
+
+}
+
+
+
+// .input-control input:focus {
+//   outline: 0;
+ 
+// }
+
+
+.input-control {
+  &.success input{
+    border-color: variables.$txt-color1;
+  }
+
+  &.error input {
+    border-color: variables.$txt-color5;
+  }
+
+ &.errorMessage {
+    color: variables.$txt-color5;
+    font-size: 15px;
+    height: 13px;
+  }
+  
+}
+
+
+
+// .input-control.success input {
+//   border-color: variables.$txt-color1;
+// }
+
+// .input-control.error input {
+//   border-color: variables.$txt-color5;
+// }
+
+// .input-control .errorMessage {
+//   color: variables.$txt-color5;
+//   font-size: 15px;
+//   height: 13px;
+// }
+
+
 
 .btn-style {
   border-radius: 20px;

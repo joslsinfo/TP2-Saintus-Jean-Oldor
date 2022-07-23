@@ -10924,6 +10924,40 @@ body {
   display: none;
 }
 
+input::-moz-placeholder {
+  color: #F8F5F3;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #F8F5F3;
+  opacity: 1;
+}
+
+.input-control input {
+  border: 2px solid #F8F5F3;
+  border-radius: 0 25px 25px 0;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #4af78c;
+}
+.input-control.error input {
+  border-color: #FF3869;
+}
+.input-control.errorMessage {
+  color: #FF3869;
+  font-size: 15px;
+  height: 13px;
+}
+
 .btn-style {
   border-radius: 20px;
 }
