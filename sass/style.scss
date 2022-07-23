@@ -111,7 +111,7 @@ input::placeholder{
     border-color: variables.$txt-color5;
   }
 
- &.errorMessage {
+ .errorMessage {
     color: variables.$txt-color5;
     font-size: 15px;
     height: 13px;

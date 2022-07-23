@@ -10952,7 +10952,7 @@ input::placeholder {
 .input-control.error input {
   border-color: #FF3869;
 }
-.input-control.errorMessage {
+.input-control .errorMessage {
   color: #FF3869;
   font-size: 15px;
   height: 13px;
