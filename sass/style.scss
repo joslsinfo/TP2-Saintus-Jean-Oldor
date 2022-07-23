@@ -5,7 +5,7 @@
 
 
 @import "../bootstrap-5.2.0/scss/bootstrap";
-// @import "../bootstrap-5.2.0/scss/bootstrap.scss";
+
 
 
 * {
@@ -83,7 +83,6 @@ input::placeholder{
 .input-control input {
   border: 2px solid variables.$txt-color4;
   border-radius: 0 25px 25px 0;
-  // display: block;
   font-size: 12px;
   padding: 10px;
   width: 100%;
@@ -97,10 +96,6 @@ input::placeholder{
 
 
 
-// .input-control input:focus {
-//   outline: 0;
- 
-// }
 
 
 .input-control {
@@ -119,23 +114,6 @@ input::placeholder{
   }
   
 }
-
-
-
-// .input-control.success input {
-//   border-color: variables.$txt-color1;
-// }
-
-// .input-control.error input {
-//   border-color: variables.$txt-color5;
-// }
-
-// .input-control .errorMessage {
-//   color: variables.$txt-color5;
-//   font-size: 15px;
-//   height: 13px;
-// }
-
 
 
 .btn-style {
